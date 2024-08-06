@@ -1,0 +1,14 @@
+/* Esconder o ícone do menu em telas maiores que 768px (tamanhos de tablet e desktop) */
+@media screen and (min-width: 768px) {
+    .fa-solid.fa-bars {
+        display: none;
+    }
+}
+
+/* Mostrar o ícone do menu em telas menores que 768px (tamanhos de celular) */
+@media screen and (max-width: 995px) {
+    .fa-solid.fa-bars {
+        display: block; /* ou inline-block, conforme necessário */
+        /* Adicione estilos adicionais para o ícone do menu aqui, se necessário */
+    }
+}

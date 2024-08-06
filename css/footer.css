@@ -1,0 +1,127 @@
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.85;
+    margin-top: 10%;
+}
+footer .social-icon,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social-icon li,
+footer .menu li{
+    list-style: none;
+}
+footer .social-icon li a{
+    font-size: 4em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+footer .social-icon li a:hover{
+    transform: scale(1.2);
+}
+footer .menu li a{
+    font-size: 1.8em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.75;
+    transition: 1s ease;
+
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+footer .waves {
+    position: absolute;
+    top: -100px; /* Posiciona as ondas acima do rodapé */
+    left: 0;
+    width: 100%; /* Cobrirá toda a largura do rodapé */
+    height: 100px; /* Altura das ondas */
+    overflow: hidden; /* Para esconder as partes das ondas que estiverem fora do rodapé */
+}
+
+footer .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Cobrirá todo o rodapé */
+    height: 100px; /* Altura das ondas */
+    background: url(/img/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 0.6;
+    animation: animateWave_01 10s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.75;
+    animation: animateWave_02 2s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 999;
+    opacity: 0.2;
+    animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    animation: animateWave_01 5s linear infinite;
+}
+
+@keyframes animateWave_01 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_03 {
+    0% {
+        background-position-x: 50px;
+    }
+    100% {
+        background-position-x: 950px;
+    }
+}

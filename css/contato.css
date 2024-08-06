@@ -1,0 +1,52 @@
+section#contato {
+    background-color: var(--second-bg-color);
+}
+
+
+.contato form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.contato form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*rgb(23, 144, 184)*/
+.contato form .input-box input,
+.contato form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: rgb(7, 2, 23);
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(92, 192, 225), rgb(14, 75, 108));
+    border-radius: .8rem;
+    border: 4px solid rgba(32, 42, 111, 0.975);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contato form .botao-bolha {
+    margin-top: 3.5rem;
+}
+
+legend {
+    font-size: 3.8rem;
+    font-weight: bold;
+    /* Pode adicionar peso à fonte para destacá-la */
+    margin-bottom: 50px;
+    /* Espaçamento inferior */
+    margin-left: 10%;
+    /* Ajuste a margem esquerda para posicionar o legend mais para a direita */
+}
+
+fieldset {
+    border: 4px solid rgb(21, 60, 104);
+    border-radius: 15px;
+}
