@@ -72,7 +72,7 @@ footer .wave {
     left: 0;
     width: 100%; /* Cobrirá todo o rodapé */
     height: 100px; /* Altura das ondas */
-    background: url('img/wave.png');
+    background: url(/img/wave.png);
     background-size: 1000px 100px;
 }
 
