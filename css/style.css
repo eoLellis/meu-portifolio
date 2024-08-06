@@ -383,77 +383,71 @@ span {
 
 /* Serviços */
 
-
-.servicos {
-    background: var(--second-bg-color);
+.servicos{
+    background-color: var(--second-bg-color);
 }
 
+.servicos h2{
+margin-bottom: 8rem;
+}
 
-.servicos-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.servicos-container{
+    display: flex;
     align-items: center;
-    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
-.servicos-box {
-    background-color: var(--main-color);
-    height: 300px;
-    cursor: pointer;
-    transition: 0.4s ease;
-    border-radius: 4rem;
-
-}
-
-.servicos-box:hover {
-    background: transparent;
-    color: var(--text-color);
-    transform: scale(1.03);
-    border: 2px solid var(--main-color);
-}
-
-.servicos-box .servicos-info {
+.servicos-container .servicos-box{
+    flex: 1 1 40rem;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: center;
     align-items: center;
-    padding: 5em;
+    justify-content: center;
+    text-align: center;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    height: 550px;
+    border: 3px solid var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.servicos-info h4 {
-    font-size: 2.5em;
-    font-weight: 500;
+.servicos-container .servicos-box:hover{
+    transform: scale(1.03);
+    background-color: whitesmoke;
+    color: #000000;
+}
+
+.servicos-box i{
+    font-size: 7rem;
+    color: var(--main-color);
     margin-bottom: 1rem;
 }
 
-.servicos-info p {
+.servicos-box h3{
+    font-size: 2.6rem;
+}
+
+.servicos-box p{
     font-size: 1.6rem;
-    font-weight: 400;
-    max-height: 100px;
-    margin: auto;
+    margin: 1rem 0 3rem;
+    font-weight: 500;
 }
 
-@media (max-width : 991px) {
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .servicos {
-        padding-bottom: 7rem;
-    }
+.servicos-box .btn{
+    background-color: transparent;
 }
 
-@media (max-width : 895px) {
-    .servicos h2 {
-        margin-bottom: 3rem;
-    }
-
-    .servicos-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.servicos-box .btn:hover{
+    color: var(--main-color);
+    background-color: #000000;
 }
+
+
+
+
 /* Estilos para a seção Competências */
 .competencias {
     background-color: var(--bg-color); /* Cor de fundo da seção */
@@ -462,7 +456,7 @@ span {
   
   /* Estilos para o título "Competências" */
   .competencias h2 {
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: center; /* Alinha o título à esquerda */
     margin-top: 0; /* Remove o espaçamento superior padrão */
   }
   
@@ -538,3 +532,29 @@ span {
 .wrapper img{
     border-radius: 23px;
 }
+
+.heading{
+    text-align: center;
+    font-size: 8rem;
+}
+
+/* Barra Lateral */
+
+::-webkit-scrollbar{
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 9rem;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
+
+
+
+/* Fim Barra Lateral */
